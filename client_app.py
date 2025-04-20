@@ -3,7 +3,7 @@ from flask import Flask, request, redirect, url_for
 app = Flask(__name__)
 
 # Assume IdP is reachable via target_ip:5001
-target_ip = '<target_ip>'
+target_ip = 'localhost'
 IDP_AUTH_URL = f"http://${target_ip}:5001/auth"  # Replace <target_ip>
 CLIENT_ID = "my_client"
 
